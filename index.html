@@ -247,6 +247,82 @@
             </div>
         </div>
     </section>
+    <!-- NEW: AI Safety / Guardrails Section -->
+    <section class="py-20 border-b border-dark-700 bg-gradient-to-b from-dark-900 to-dark-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-brand-400 font-mono text-sm tracking-wider uppercase mb-2">Agent-Proof Architecture</h2>
+                <h3 class="text-4xl font-bold text-white mb-4">AI Agents Break Code.<br>Ours Doesn't.</h3>
+                <p class="text-slate-400 max-w-2xl mx-auto">
+                    Most templates are fragile. If you ask an AI to modify them, they break. 
+                    You aren't just buying code. You're buying the <span class="text-white font-semibold">brain</span> that keeps it safe.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10 items-center mb-16">
+                <!-- The Problem -->
+                <div class="relative group">
+                    <div class="absolute -inset-0.5 bg-red-900/50 rounded-xl blur opacity-30"></div>
+                    <div class="relative bg-dark-900 border border-red-900/50 rounded-xl p-6 shadow-2xl">
+                        <div class="flex items-center justify-between mb-4 border-b border-red-900/30 pb-3">
+                            <span class="text-red-400 font-bold flex items-center gap-2"><i class="fa-solid fa-triangle-exclamation"></i> Common Template</span>
+                            <span class="text-xs text-red-500 font-mono">Status: CRASHED</span>
+                        </div>
+                        <div class="font-mono text-sm space-y-2 opacity-80">
+                            <div class="text-slate-400">$ npm run dev</div>
+                            <div class="text-white">> starting server...</div>
+                            <div class="text-red-500">TypeError: Cannot read properties of undefined (reading 'user')</div>
+                            <div class="text-red-500">at /src/auth.js:42:15</div>
+                            <div class="text-red-400">Error: Hallucinated import 'express-jwt-dumb'</div>
+                            <div class="text-slate-500 mt-4 border-t border-dashed border-slate-700 pt-2 text-xs italic">
+                                "I asked the AI to add a profile page and it deleted my auth middleware..."
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Solution -->
+                <div class="relative group">
+                    <div class="absolute -inset-0.5 bg-green-500/30 rounded-xl blur opacity-40 animate-pulse"></div>
+                    <div class="relative bg-dark-900 border border-green-500/30 rounded-xl p-6 shadow-2xl">
+                        <div class="flex items-center justify-between mb-4 border-b border-green-900/50 pb-3">
+                            <span class="text-green-400 font-bold flex items-center gap-2"><i class="fa-solid fa-shield-halved"></i> Enterprise Launchpad</span>
+                            <span class="text-xs text-green-500 font-mono">Status: OPERATIONAL</span>
+                        </div>
+                        <div class="font-mono text-sm space-y-2">
+                            <div class="text-slate-400">$ npm run test:suite</div>
+                            <div class="text-green-400">✓ Auth Middleware Checks</div>
+                            <div class="text-green-400">✓ RAG Pipeline Integration</div>
+                            <div class="text-green-400">✓ BullMQ Job Processing</div>
+                            <div class="text-white mt-2">Test Suites: <span class="text-green-400 font-bold">33 passed</span>, 33 total</div>
+                            <div class="text-slate-500 mt-4 border-t border-dashed border-slate-700 pt-2 text-xs italic">
+                                "The agent checked the context files, ran the tests, and deployed without a single error."
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-dark-800/50 p-6 rounded-xl border border-dark-700 hover:border-brand-500/50 transition-colors">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4 text-2xl">🛡️</div>
+                    <h4 class="text-white font-bold mb-2">33+ Test Suites</h4>
+                    <p class="text-sm text-slate-400">Every critical path (Auth, Billing, AI) is covered. Your agent runs these tests before committing any code.</p>
+                </div>
+                <div class="bg-dark-800/50 p-6 rounded-xl border border-dark-700 hover:border-brand-500/50 transition-colors">
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4 text-2xl">🧠</div>
+                    <h4 class="text-white font-bold mb-2">Context-Aware AI</h4>
+                    <p class="text-sm text-slate-400">Includes strict `.cursorrules` and context files. The AI knows your project structure better than you do.</p>
+                </div>
+                <div class="bg-dark-800/50 p-6 rounded-xl border border-dark-700 hover:border-brand-500/50 transition-colors">
+                    <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mb-4 text-2xl">📚</div>
+                    <h4 class="text-white font-bold mb-2">Doc-Driven Coding</h4>
+                    <p class="text-sm text-slate-400">Full internal documentation means you can ask the agent to "Explain the RAG pipeline" and it will teach you step-by-step.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Architecture Features -->
     <section id="features" class="py-24 relative">
