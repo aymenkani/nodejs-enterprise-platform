@@ -339,9 +339,9 @@
                     <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-brain text-blue-400 text-xl"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-white mb-3">Complete RAG Pipeline</h4>
+                    <h4 class="text-xl font-bold text-white mb-3">Multimodal RAG Engine</h4>
                     <p class="text-slate-400 leading-relaxed">
-                        Pre-configured vector search using <strong>pgvector</strong>. Eliminate expensive managed vector DBs like Pinecone. Own your data.
+                        Ingest both **text & images**. Features smart content deduplication, self-healing indexing, and standard pgvector search.
                     </p>
                 </div>
 
@@ -383,9 +383,9 @@
                     <div class="w-12 h-12 bg-pink-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-tower-broadcast text-pink-400 text-xl"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-white mb-3">Real-time Sockets</h4>
+                    <h4 class="text-xl font-bold text-white mb-3">Real-time & Offline</h4>
                     <p class="text-slate-400 leading-relaxed">
-                        Socket.io pre-configured for live notifications and tracking the progress of long-running AI jobs.
+                        Socket.io with **offline queuing**. Notifications are saved to Postgres and auto-delivered when users reconnect.
                     </p>
                 </div>
 
@@ -394,9 +394,9 @@
                     <div class="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-shield-halved text-cyan-400 text-xl"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-white mb-3">Auth & RBAC</h4>
+                    <h4 class="text-xl font-bold text-white mb-3">Fortress Auth</h4>
                     <p class="text-slate-400 leading-relaxed">
-                        Complete JWT authentication flow with Role-Based Access Control. Secure Admin vs User routes out of the box.
+                        Dual Login (Google + Email), Token Blacklisting, and Role-Based Access Control (Admin/User) pre-configured.
                     </p>
                 </div>
             </div>
@@ -477,10 +477,14 @@
                         <div class="flex items-center gap-2"><i class="fa-solid fa-file-lines text-slate-500"></i> .env.example</div>
                         <div class="flex items-center gap-2"><i class="fa-brands fa-docker text-blue-400"></i> docker-compose.mysql.yml</div>
                         <div class="flex items-center gap-2"><i class="fa-brands fa-docker text-blue-400"></i> docker-compose.postgres.yml</div>
+                        <div class="flex items-center gap-2"><i class="fa-brands fa-docker text-blue-400"></i> docker-compose.redis.yml</div>
+                        <div class="flex items-center gap-2"><i class="fa-brands fa-docker text-blue-400"></i> docker-compose.postgres.railway.yml</div>
+                        <div class="flex items-center gap-2"><i class="fa-brands fa-docker text-blue-400"></i> docker-compose.redis.railway.yml</div>
                         <div class="flex items-center gap-2"><i class="fa-brands fa-docker text-blue-400"></i> docker-compose.yml</div>
                         <div class="flex items-center gap-2"><i class="fa-solid fa-terminal text-green-500"></i> docker-entrypoint.dev.sh</div>
                         <div class="flex items-center gap-2"><i class="fa-brands fa-docker text-slate-300"></i> Dockerfile</div>
                         <div class="flex items-center gap-2"><i class="fa-brands fa-docker text-slate-300"></i> Dockerfile.dev</div>
+                        <div class="flex items-center gap-2"><i class="fa-brands fa-docker text-slate-300"></i> Dockerfile.railway</div>
                         <div class="flex items-center gap-2"><i class="fa-brands fa-js text-yellow-500"></i> eslint.config.mjs</div>
                         <div class="flex items-center gap-2"><i class="fa-brands fa-npm text-red-400"></i> package.json</div>
                         <div class="flex items-center gap-2"><i class="fa-brands fa-js text-blue-400"></i> prisma.config.ts</div>
